@@ -31,44 +31,132 @@
                 </a>
                 <span class="line"></span>
                 <div class="header__buger-menu">
-                    <img src="/img/burger___menu-icon.svg" alt="">
+                    <img class="btn-menu" id="btn-menu" onclick="toggleMenu()" src="img/burger___menu-icon.svg">
+                    <div class="menu" id="list-menu">
+                        <ul class="wrapper-burger">
+                            <li>
+                                <a class="menu-link" href="">Покос травы триммером</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="">Покос бурьяна триммером</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="">Покос газонокосилкой</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="">Вырубка мелколесья</a>
+                            </li>
+                            <li>
+                                <a class="menu-link" href="">Уборка скошеной травы</a>
+                            </li>
+                    </div>
+                        </ul>
                     <span class="menu-text">Виды покоса</span>
                 </div>
             </div>
     
             <div class="header-right">
                 <a class="header-right__tel" href="tel:+79220000000">Заказать звонок</a>
-                <img class="header-right__icon" src="/img/tel-icon.svg" alt="телефон">
+                <img class="header-right__icon" src="img/tel-icon.svg" alt="телефон">
                 <a class="header-right__number" href="tel:+79220000000">8 922 000 00 00</a>
             </div>
             <!-- /.header-right -->
         </div>
     </header>
     
-    <div class="advertising-block">
-        <div class="container">
     
-            <div class="advertising-block__left">
-                <h1 class="advertising-block__title">Профессиональный
+    <div class="advertisings">
+        <div class="container advertisings-container">
+    
+            <div class="advertisings__left">
+                <h1 class="advertisings__title">Профессиональный <br>
                     Покос травы в кирове</h1>
-                <span class="advertising-block__text">Кирове и в 60 км от города</span>
+                <span class="advertisings__text">Кирове и в 60 км от города</span>
                 <button class="js-info">i</button>
             </div>
             <!-- /.advertising-block__left -->
     
-            <div class="advertising-block__right">
-                <span>Заказать звонок</span>
-                <form action="">
+            <div class="advertisings__right">
+                <span class="advertisings__right-title">Заказать звонок</span>
+                <form class="advertisings__right-form" action="">
                     <input type="text" name="name" required="required" placeholder="Ваше имя"
                         class="form__input-name form__input js-field">
                     <input value="" type="tel" required="required" name="phone" id="request__tel"
                         placeholder="+7 (___) ___-__-__" class="form__input-tel form__input mask-phone js-field">
-                    <button class="form__btn btn">Оставить заявку</button>
+                    <button class="form__btn ">Оставить заявку</button>
                 </form>
-                <a href="#">Политика концедициальности</a>
+                <a class="advertisings__right-policy" href="#">Политика концедициальности</a>
             </div>
             <!-- /.advertising-block__right -->
         </div>
     </div>
+
+    <div class="price-card">
+        <div class="container">
+            <span class="price-card__line"></span>
+            <h2>Цены на покос травы</h2>
+            <div class="price-card__wrapper">
+                <div class="price-card__conatiner">
+                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <div class="price-card__content">
+                        <h3 class="price-card__conatiner-title">Покос травы триммером</h3>
+                        <span class="price-card__line"></span>
+                        <span class="price-card__tag-sell">Цена покоса:</span>
+                        <span class="price-card__tag-price">250 руб. сотка</span>
+                    </div>
+                    <button class="price-card__btn">Подробнее</button>
+                </div>
+                <!-- /.price-card__conatiner -->
+                <div class="price-card__conatiner">
+                    <img src="/img/price-card_2.png" alt="газонокасищик">
+                    <div class="price-card__content">
+                        <h3 class="price-card__conatiner-title">Покос бурьяна тримером</h3>
+                        <span class="price-card__line"></span>
+                        <span class="price-card__tag-sell">Цена покоса:</span>
+                        <span class="price-card__tag-price">270 руб. сотка</span>
+                    </div>
+                    <button class="price-card__btn">Подробнее</button>
+                </div>
+                <!-- /.price-card__conatiner -->
+                <div class="price-card__conatiner">
+                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <div class="price-card__content">
+                        <h3 class="price-card__conatiner-title">Покос травы газонокосилкой</h3>
+                        <span class="price-card__line"></span>
+                        <span class="price-card__tag-sell">Цена покоса:</span>
+                        <span class="price-card__tag-price">250 руб. сотка</span>
+                    </div>
+                    <button class="price-card__btn">Подробнее</button>
+                </div>
+                <!-- /.price-card__conatiner -->
+                <div class="price-card__conatiner">
+                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <div class="price-card__content"></div>
+                        <h3 class="price-card__conatiner-title">Вырубка мелколесья</h3>
+                        <span class="price-card__line"></span>
+                        <span class="price-card__tag-sell">Цена покоса:</span>
+                        <span class="price-card__tag-price">800 руб. сотка</span>
+                    </div>
+                    <button class="price-card__btn">Подробнее</button>
+                </div>
+                <!-- /.price-card__conatiner -->
+                <div class="price-card__conatiner">
+                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <div class="price-card__content">
+                        <h3 class="price-card__conatiner-title">Уборка скошеной травы</h3>
+                        <span class="price-card__line"></span>
+                        <span class="price-card__tag-sell">Цена покоса:</span>
+                        <span class="price-card__tag-price">200 руб. сотка</span>
+                    </div>
+                    <button class="price-card__btn">Подробнее</button>
+                </div>
+                <!-- /.price-card__conatiner -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.price-card -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>

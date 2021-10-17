@@ -1,0 +1,95 @@
+.advertisings {
+  background: url("../../img/bg-advertising.png") center / cover no-repeat;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 65px;
+    color: #ffffff;
+    margin: 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  &__right {
+    margin-top: 49px;
+    margin-bottom: 49px;
+    padding: 44px 48px 39px 48px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000;
+      margin-bottom: 27px;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+    }
+    &-policy {
+      margin-top: 15px;
+      color: #333333;
+      font-size: 15px;
+      line-height: 23px;
+      border-bottom: 1px solid #333333;
+    }
+  }
+}
+
+.form {
+  &__input {
+    padding: 21px 280px 16px 23px;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    outline: none;
+    background-color: rgba($color: #219653, $alpha: 0.03);
+    font-size: 15px;
+    line-height: 23px;
+    &-name {
+      margin-bottom: 15px;
+      color: #333333;
+    }
+    &-tel {
+      margin-bottom: 30px;
+      color: #333333;
+    }
+  }
+  &__btn {
+    padding: 21px 148px 16px 149px;
+    background-color: $green;
+    color: #ffff;
+    font-size: 15px;
+    line-height: 23px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.js-info {
+  width: 34px;
+  height: 34px;
+  background-color: $green;
+  font-size: 22px;
+  line-height: 26px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}

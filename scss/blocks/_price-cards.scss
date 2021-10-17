@@ -1,0 +1,18 @@
+.price-card {
+    padding-top: 78px;
+    padding-bottom: 100px;
+  &__conatiner {
+    max-width: 390px;
+    background-color: rgba($color: #219653, $alpha: 0.03);
+    &-title {
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,54 @@
+.header {
+  padding: 22px 0 27px 0;
+  &__conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+  &__buger-menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__tel {
+      font-size: 15px;
+      line-height: 23px;
+      color: $green;
+      border-bottom: 1px solid $green;
+    }
+    &__icon {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    &__number {
+      font-size: 17px;
+      line-height: 20px;
+      color: #333333;
+      font-weight: 900;
+    }
+  }
+}
+
+.menu-text {
+  font-size: 15px;
+  line-height: 23px;
+  color: $green;
+  margin-left: 20px;
+}
+
+.line {
+  height: 41px;
+  width: 0.5px;
+  background-color: #e3e3e3;
+  margin-left: 44px;
+  margin-right: 51px;
+}

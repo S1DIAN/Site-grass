@@ -1,11 +1,6 @@
 .price-card {
   padding-top: 78px;
   padding-bottom: 100px;
-  &__line {
-    height: 34px;
-    width: 1px;
-    background-color: $green;
-  }
   &__title {
     font-weight: bold;
     font-size: 34px;

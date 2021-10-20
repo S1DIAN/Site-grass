@@ -1,18 +1,79 @@
 .price-card {
-    padding-top: 78px;
-    padding-bottom: 100px;
+  padding-top: 78px;
+  padding-bottom: 100px;
+  &__line {
+    height: 34px;
+    width: 1px;
+    background-color: $green;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 50px;
+    color: $black;
+    margin: 0;
+    padding-left: 20px;
+  }
   &__conatiner {
-    max-width: 390px;
+    min-width: 391px;
     background-color: rgba($color: #219653, $alpha: 0.03);
     &-title {
+      padding-top: 24px;
+      padding-bottom: 21px;
+      margin: 0;
       font-size: 20px;
       line-height: 30px;
       color: $black;
+      margin-left: 21px;
     }
+  }
+  &__horizontal-line {
+    height: 1px;
+    width: 100%;
+    background-color: #e9e9e9;
   }
   &__content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
   }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row dense;
+    grid-column-gap: 24px;
+    grid-row-gap: 26px;
+  }
+  &__btn {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    min-width: 390px;
+    min-height: 75px;
+    background-color: $green;
+    border: none;
+    cursor: pointer;
+  }
+  &__tag {
+    padding: 24px 0 28px 0;
+    margin-left: 21px;
+    &-sell {
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      margin-bottom: 15px;
+    }
+    &-price {
+      font-size: 16px;
+      line-height: 24px;
+      color: $green;
+    }
+  }
+}
+
+.conatiner-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 49px;
 }

@@ -3,6 +3,10 @@
 }
 body {
   max-width: 100%;
+  // font-family: "Montserrat", sans-serif;
+  // font-family: "Oswald", sans-serif;
+  font-family: "Prompt", sans-serif;
+  // font-family: "Roboto", sans-serif;
 }
 .container {
   max-width: 1206px;
@@ -15,4 +19,13 @@ img {
 a {
   outline: none;
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
 }

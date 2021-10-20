@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@700&family=Prompt:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     
@@ -34,23 +39,23 @@
                     <img class="btn-menu" id="btn-menu" onclick="toggleMenu()" src="img/burger___menu-icon.svg">
                     <div class="menu" id="list-menu">
                         <ul class="wrapper-burger">
-                            <li>
+                            <li class="menu-link">
                                 <a class="menu-link" href="">Покос травы триммером</a>
                             </li>
-                            <li>
+                            <li class="menu-link">
                                 <a class="menu-link" href="">Покос бурьяна триммером</a>
                             </li>
-                            <li>
+                            <li class="menu-link">
                                 <a class="menu-link" href="">Покос газонокосилкой</a>
                             </li>
-                            <li>
+                            <li class="menu-link">
                                 <a class="menu-link" href="">Вырубка мелколесья</a>
                             </li>
-                            <li>
+                            <li class="menu-link">
                                 <a class="menu-link" href="">Уборка скошеной травы</a>
                             </li>
-                    </div>
                         </ul>
+                    </div>
                     <span class="menu-text">Виды покоса</span>
                 </div>
             </div>
@@ -72,7 +77,50 @@
                 <h1 class="advertisings__title">Профессиональный <br>
                     Покос травы в кирове</h1>
                 <span class="advertisings__text">Кирове и в 60 км от города</span>
-                <button class="js-info">i</button>
+                    <a href="#"  class=" open-popup js-info">i</a>
+                    <div class="popup__bg">
+                        <div class="popup">
+                            <div class="popup-conatiner">
+                                <img src="img/exit-icon.svg" class="close-popup">
+                                <h3 class="popup__title">Профессиональный покос травы в Кирове</h3>
+                                <p class="popup__text">Если в вашем ведении большая территория земли, то в осенне-летний период на ней надо регулярно косить траву.
+                                    Не важно,
+                                    представляете вы организацию <br>или выступаете как частный землевладелец. Мы будем рады предложить постоянное
+                                    обслуживание
+                                    участка. Скашивание травы производится 1-2 раза в <br> месяц, в зависимости от её скорости роста и требований
+                                    заказчика.
+                                    Работаем за наличный и безналичный расчет.</p>
+                                <p class="popup__text">Вы приобрели новый участок и первым делом решили окосить его? Мы предлагаем скос травы и расчистку территории
+                                    под
+                                    строительство. Даже если вы не <br> планируете застраивать участок в ближайшее время, от бурьяна лучше
+                                    избавиться. Ведь
+                                    сухостой может стать причиной пожара!</p>
+                                <p class="popup__text">Компания ЗЕМЛЕЧИСТ производит профессиональный покос травы и кустарников любой высоты в Подмосковье.</p>
+                                
+                                <div class="popup__conatiner-img">
+                                    <img class="popup__img" src="img/popup_pic-1.png" alt="">
+                                    <img class="popup__img" src="img/popup_pic-2.png" alt="">
+                                    <img class="popup__img" src="img/popup_pic-3.png" alt="">
+                                </div>
+                                <h3 class="popup__title">Сколько стоит скосить траву</h3>
+                                <p class="popup__text">Цена работ за сотку или квадратный метр зависит от способа и площади окашиваемого участка. Выгоднее
+                                    заказывать услугу врасценкикомплексе с удалением <br>
+                                    старых деревьев, вспашкой земли и вывозом образовавшегося мусора. При подписаниидоговора на
+                                    регулярное обслуживание предоставляется скидка, а <br>
+                                    значит, цена покоса будет ещё меньше. Ориентировочные
+                                    расценки
+                                    приведены в таблице ниже.</p>
+                                <p class="popup__text">Вид работ Единицы измерения Цена, рублей <br>
+                                    Покос травы или сухого бурьяна кв. м. 15 <br>
+                                    Стрижка газона колесной газонокосилкой кв. м. 20 <br>
+                                    Покос травы трактором (на площадях от 1 Га) кв. м. 3<br>
+                                    Сбор травы граблями (если требуется) кв. м. 5 <br>
+                                    Погрузка и вывоз скошенной травы контейнером объемом 8 куб. м. (за штуку) шт. 12,500 <br>
+                                    Погрузка и вывоз скошенной травы контейнером объемом 27 куб. м. (за штуку) шт. 35,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <!-- /.advertising-block__left -->
     
@@ -93,16 +141,20 @@
 
     <div class="price-card">
         <div class="container">
-            <span class="price-card__line"></span>
-            <h2>Цены на покос травы</h2>
+            <div class="conatiner-title">
+                <img class="price-card__line" src="/img/Line-green.svg" alt="">
+                <h2 class="price-card__title">Цены на покос травы</h2>
+            </div>
             <div class="price-card__wrapper">
                 <div class="price-card__conatiner">
                     <img src="/img/price-card_1.png" alt="газонокасищик">
                     <div class="price-card__content">
                         <h3 class="price-card__conatiner-title">Покос травы триммером</h3>
-                        <span class="price-card__line"></span>
-                        <span class="price-card__tag-sell">Цена покоса:</span>
-                        <span class="price-card__tag-price">250 руб. сотка</span>
+                        <span class="price-card__horizontal-line"></span>
+                        <ul class="price-card__tag">
+                            <li class="price-card__tag-sell">Цена покоса:</li>
+                            <li class="price-card__tag-price">250 руб. сотка</li>
+                        </ul>
                     </div>
                     <button class="price-card__btn">Подробнее</button>
                 </div>
@@ -111,42 +163,50 @@
                     <img src="/img/price-card_2.png" alt="газонокасищик">
                     <div class="price-card__content">
                         <h3 class="price-card__conatiner-title">Покос бурьяна тримером</h3>
-                        <span class="price-card__line"></span>
-                        <span class="price-card__tag-sell">Цена покоса:</span>
-                        <span class="price-card__tag-price">270 руб. сотка</span>
+                        <span class="price-card__horizontal-line"></span>
+                        <ul class="price-card__tag">
+                            <li class="price-card__tag-sell">Цена покоса:</li>
+                            <li class="price-card__tag-price">270 руб. сотка</li>
+                        </ul>
                     </div>
                     <button class="price-card__btn">Подробнее</button>
                 </div>
                 <!-- /.price-card__conatiner -->
                 <div class="price-card__conatiner">
-                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <img src="/img/price-card_3.png" alt="газонокасищик">
                     <div class="price-card__content">
                         <h3 class="price-card__conatiner-title">Покос травы газонокосилкой</h3>
-                        <span class="price-card__line"></span>
-                        <span class="price-card__tag-sell">Цена покоса:</span>
-                        <span class="price-card__tag-price">250 руб. сотка</span>
+                        <span class="price-card__horizontal-line"></span>
+                        <ul class="price-card__tag">
+                            <li class="price-card__tag-sell">Цена покоса:</li>
+                            <li class="price-card__tag-price">250 руб. сотка</li>
+                        </ul>
                     </div>
                     <button class="price-card__btn">Подробнее</button>
                 </div>
                 <!-- /.price-card__conatiner -->
                 <div class="price-card__conatiner">
-                    <img src="/img/price-card_1.png" alt="газонокасищик">
-                    <div class="price-card__content"></div>
+                    <img src="/img/price-card_4.png" alt="газонокасищик">
+                    <div class="price-card__content">
                         <h3 class="price-card__conatiner-title">Вырубка мелколесья</h3>
-                        <span class="price-card__line"></span>
-                        <span class="price-card__tag-sell">Цена покоса:</span>
-                        <span class="price-card__tag-price">800 руб. сотка</span>
+                        <span class="price-card__horizontal-line"></span>
+                        <ul class="price-card__tag">
+                            <li class="price-card__tag-sell">Цена покоса:</li>
+                            <li class="price-card__tag-price">800 руб. сотка</li>
+                        </ul>
                     </div>
                     <button class="price-card__btn">Подробнее</button>
                 </div>
                 <!-- /.price-card__conatiner -->
                 <div class="price-card__conatiner">
-                    <img src="/img/price-card_1.png" alt="газонокасищик">
+                    <img src="/img/price-card_5.png" alt="газонокасищик">
                     <div class="price-card__content">
                         <h3 class="price-card__conatiner-title">Уборка скошеной травы</h3>
-                        <span class="price-card__line"></span>
-                        <span class="price-card__tag-sell">Цена покоса:</span>
-                        <span class="price-card__tag-price">200 руб. сотка</span>
+                        <span class="price-card__horizontal-line"></span>
+                        <ul class="price-card__tag">
+                            <li class="price-card__tag-sell">Цена покоса:</li>
+                            <li class="price-card__tag-price">200 руб. сотка</li>
+                        </ul>
                     </div>
                     <button class="price-card__btn">Подробнее</button>
                 </div>
@@ -156,7 +216,7 @@
         <!-- /.container -->
     </div>
     <!-- /.price-card -->
-
+    <script src="js/popup.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

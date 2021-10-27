@@ -20,6 +20,7 @@ img {
 a {
   outline: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -31,8 +32,18 @@ li {
   list-style: none;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.section-title::before {
+  content: "";
+  border-left: 6px solid #882020;
+  max-width: 1px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -581,16 +592,6 @@ template {
   font-family: "Oswald", sans-serif;
 }
 
-.advertisings__right-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .advertisings__right-policy {
   margin-top: 15px;
   color: #333333;
@@ -607,6 +608,7 @@ template {
   background-color: rgba(33, 150, 83, 0.03);
   font-size: 15px;
   line-height: 23px;
+  max-width: 100%;
 }
 
 .form__input-name {
@@ -620,7 +622,10 @@ template {
 }
 
 .form__btn {
-  padding: 21px 148px 16px 149px;
+  min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  margin: 0 auto 0 auto;
   background-color: #219653;
   color: #ffff;
   font-size: 15px;
@@ -629,6 +634,22 @@ template {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .js-info {
@@ -700,6 +721,7 @@ template {
   line-height: 28px;
   color: #333333;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .popup.active {
@@ -763,6 +785,7 @@ template {
   line-height: 30px;
   color: #333333;
   margin-left: 21px;
+  font-weight: 700;
 }
 
 .price-card__horizontal-line {
@@ -832,5 +855,13 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 49px;
+}
+
+.working-process {
+  background-color: #219653;
+}
+
+.working-process-container {
+  padding: 67px 0 67px 0;
 }
 /*# sourceMappingURL=style.css.map */

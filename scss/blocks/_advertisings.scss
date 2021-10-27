@@ -41,10 +41,6 @@
       margin-bottom: 27px;
       font-family: "Oswald", sans-serif;
     }
-    &-form {
-      display: flex;
-      flex-direction: column;
-    }
     &-policy {
       margin-top: 15px;
       color: #333333;
@@ -64,6 +60,7 @@
     background-color: rgba($color: #219653, $alpha: 0.03);
     font-size: 15px;
     line-height: 23px;
+    max-width: 100%;
     &-name {
       margin-bottom: 15px;
       color: #333333;
@@ -74,7 +71,10 @@
     }
   }
   &__btn {
-    padding: 21px 148px 16px 149px;
+    min-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin: 0 auto 0 auto;
     background-color: $green;
     color: #ffff;
     font-size: 15px;
@@ -83,6 +83,12 @@
     outline: none;
     border: none;
     cursor: pointer;
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -104,7 +110,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  transform: translate(-50%, -50%) scale(0); 
   background: #fff;
   width: 100%;
   padding: 87px 0 88px 0;
@@ -137,9 +143,10 @@
     line-height: 28px;
     color: $black;
     font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
   &.active {
-    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+    transform: translate(-50%, -50%) scale(1); 
     transition: 0.5s all;
   }
   &__bg {
@@ -149,12 +156,12 @@
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    opacity: 0; // Скрываем фон и сам попап
-    pointer-events: none; // Запрещаем ему быть целью событий
+    opacity: 0; 
+    pointer-events: none; 
     transition: 0.5s all;
     &.active {
-      opacity: 1; // Показываем фон и попап
-      pointer-events: all; // Возвращаем события
+      opacity: 1; 
+      pointer-events: all; 
       transition: 0.5s all;
     }
   }

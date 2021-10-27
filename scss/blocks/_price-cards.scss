@@ -20,6 +20,7 @@
       line-height: 30px;
       color: $black;
       margin-left: 21px;
+      font-weight: 700;
     }
   }
   &__horizontal-line {
@@ -68,7 +69,7 @@
 }
 
 .conatiner-title {
-    display: flex;
-    align-items: center;
-    padding-bottom: 49px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 49px;
 }

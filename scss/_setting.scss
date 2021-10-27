@@ -19,6 +19,7 @@ img {
 a {
   outline: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -30,6 +31,15 @@ li {
   list-style: none;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 50px;
+  margin: 0;
+  &::before {
+    content: "";
+    border-left: 6px solid#882020;
+    max-width: 1px;
+  }
 }
